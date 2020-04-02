@@ -7,10 +7,10 @@ const Header = () => {
     <div>
       <ThemeContextConsumer>
         {
-          theme => {
-            console.log("Header Theme", theme);
+          context => {
+            console.log("Header Theme", context.theme);
             return (
-              < header className={`${theme}-theme`}> Hello World !!!</header>)
+              < header className={`${context.theme}-theme`}> Hello World !!!</header>)
           }
 
 
